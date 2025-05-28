@@ -10,16 +10,16 @@ export default function Home() {
           {/* Logo + Ministry Heading */}
           <div className="flex items-center gap-4 hover:opacity-95 transition">
             {/* Responsive logo */}
-           <div className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20">
-  <Image
-    src="/images/singapore-logo.jpg"
-    alt="Government Logo"
-    width={40}
-    height={30}
-    className="object-contain w-full h-full"
-    priority
-  />
-</div>
+           <div className="w-10 h-10 sm:w-12 sm:h-12">
+            <Image
+              src="/images/singapore-logo.jpg"
+              alt="Government Logo"
+              width={40}
+              height={40}
+              className="object-contain w-full h-full"
+              priority
+            />
+          </div>
 
             <div>
               <h1 className="font-bold text-2xl text-red-700 leading-tight">
@@ -58,17 +58,7 @@ export default function Home() {
           </p>
 
           <div className="flex items-center space-x-4 mt-8">
-            {/* Responsive COVID icon */}
-           {/* <div className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20">
-  <Image
-    src="/images/covid.jpg"
-    alt="COVID-19 virus icon"
-    width={70}
-    height={68}
-    className="object-contain w-full h-full"
-  />
-</div> */}
-
+        
             <div>
               <p className="text-sm text-gray-500 font-semibold">Date:</p>
               <p className="text-gray-700 text-base">28 May 2025</p>
