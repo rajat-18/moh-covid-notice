@@ -2,11 +2,9 @@
   "name": "covid-college-closure",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build && next export",
-    "start": "next start"
-  },
+   "scripts": {
+  "build": "next build"
+},
   "dependencies": {
     "lucide-react": "^0.511.0",
     "next": "15.3.2",
