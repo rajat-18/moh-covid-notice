@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Search } from "lucide-react"; // Make sure Lucide is installed: `npm install lucide-react`
+import { Search } from "lucide-react"; // Assuming you want to use this icon somewhere
 
 export default function Home() {
   return (
@@ -7,19 +7,25 @@ export default function Home() {
       {/* Navbar with sticky positioning */}
       <nav className="w-full bg-white shadow-md sticky top-0 left-0 z-50">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          
           {/* Logo + Ministry Heading */}
           <div className="flex items-center gap-4 hover:opacity-95 transition">
-            <Image
-              src="/images/singapore logo.jpg"
-              alt="Government Logo"
-              width={48}
-              height={48}
-              priority
-            />
+            {/* Responsive logo */}
+           <div className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20">
+  <Image
+    src="/images/singapore-logo.jpg"
+    alt="Government Logo"
+    width={80}
+    height={80}
+    className="object-contain w-full h-full"
+    priority
+  />
+</div>
+
             <div>
               <h1 className="font-bold text-2xl text-red-700 leading-tight">
-                Ministry of Health<br />Singapore
+                Ministry of Health
+                <br />
+                Singapore
               </h1>
             </div>
           </div>
@@ -37,9 +43,8 @@ export default function Home() {
                 </a>
               ))}
             </div>
-
-           
-            
+            {/* Search icon on right */}
+            <Search className="w-6 h-6 cursor-pointer text-gray-700 hover:text-red-600" />
           </div>
         </div>
       </nav>
@@ -53,12 +58,17 @@ export default function Home() {
           </p>
 
           <div className="flex items-center space-x-4 mt-8">
-            <Image
-              src="/images/covid.jpg"
-              alt="COVID-19 virus icon"
-              width={64}
-              height={64}
-            />
+            {/* Responsive COVID icon */}
+           {/* <div className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20">
+  <Image
+    src="/images/covid.jpg"
+    alt="COVID-19 virus icon"
+    width={70}
+    height={68}
+    className="object-contain w-full h-full"
+  />
+</div> */}
+
             <div>
               <p className="text-sm text-gray-500 font-semibold">Date:</p>
               <p className="text-gray-700 text-base">28 May 2025</p>
