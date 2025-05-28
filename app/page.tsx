@@ -14,8 +14,8 @@ export default function Home() {
   <Image
     src="/images/singapore-logo.jpg"
     alt="Government Logo"
-    width={80}
-    height={80}
+    width={40}
+    height={30}
     className="object-contain w-full h-full"
     priority
   />
